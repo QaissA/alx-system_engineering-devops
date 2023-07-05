@@ -1,2 +1,2 @@
- hello readme for script absolute path
+hello this is a project for scripts in shell using linux bash
 
