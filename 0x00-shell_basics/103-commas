@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pa | awk '{print $0","}' | tr -d '\n'
+ls -pa | awk '{print $0", "}' | tr -d '\n'
