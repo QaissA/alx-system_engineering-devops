@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | grep -v '^\.\.$' | xargs echo | tr ' ' ', ' | sed 's/,$/\n/'
+ls -ap | grep -v '^\.\.$' | tr '\n' ',' | sed 's/,$/\n/' | sed 's/\(.\),/\1/g'
