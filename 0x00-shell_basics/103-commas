@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -pa | awk '{print $0", "}' | tr -d '\n'
+ls -ap | grep -v "^\.\.$" | sort -d -k1.1 | awk '{ORS=NR%2?",":$0"\n"}1'
+
